@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}"> 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/4d9879b1f3.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-	<title>Python do Zero!</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}"> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/4d9879b1f3.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<title>Python do Zero!</title>
     </head>
     <body>
-	<section class="destaque container-fluid">
-	    <div>    
-		<h1> 
-		    <i class="fas fa-pencil-ruler"></i>
-		    Aprenda Python 
-		</h1>
-	    </div>
-	    <div class="destaque-sub">
-		<h3>
-		    Um guia simples e fácil para começar a programar do zero!
-		</h3>
-	    </div>
-	</section>
-	<section class="container-fluid">
-	    <!-- 
-	    <div class="destaque-sub">
-		<h3 style="font-family: 'Ubuntu Mono', monospace;">
-		    <i class="fas fa-terminal"></i>
-		    print("Olá, mundo!")
-		</h3>
-	    </div>
-	    -->
-	</section>
-	<footer>
-	    <div id="rodape" class="container">
-		<div class="Row">
-		    <div class="col-12 col-md-6 col-lg-4">
-			<h3 class="h3"> Propósito </h3>
-			<p class="ptext"> 
-			    Plataforma de aprendizado de Python, do zero, cobrindo os conteúdos mais básicos para o desenvolvimento de aplicações simples. 
-			</p>
-		    </div>
-		    <div class="col-12 col-md-4 offset-md-2 col-lg-4 offset-lg-4">
-			<h3 class="h3"> Links </h3>
-			<ul class="rodape_ul">
-			    <li class="rodape_li">
-				<a class="rodape_a" href="https://github.com/PzanettiD/Aprenda-Python">
-				    <i class="fab fa-github"></i>
-				    GitHub Repo
-				</a>
-			    </li>
-			    <li class="rodape_li">
-				<a class="rodape_a" href="https://github.com/PzanettiD">
-				    <i class="fas fa-user-shield"></i>
-				    Criador
-				</a>
-			    </li>
-			    <li class="rodape_li">
-				    <a class="rodape_a" href="https://python.org.br">
-				    <i class="fab fa-python"></i>
-				    Site e Documentação Oficial
-				</a>
-			    </li>
-			</ul>
-		    </div>
-		</div>
-	    </div>
-	</footer>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">
+				<i class="fas fa-pencil-ruler"></i>
+				Aprenda Python
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link rodape_a" href="{{url_for('homepage')}}">Início<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link rodape_a" href="{{url_for('Aulas')}}">Aulas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link rodape_a" href="#">Em breve</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="destaque container-fluid">
+			<div>    
+				<h1> 
+					<i class="fas fa-graduation-cap"></i>
+					Tudo o que você precisa pra começar a programar agora!
+				</h1>
+			</div>
+			<div class="destaque-sub">
+				<h3 style="text-decoration: underline #ffd343;">
+					Um guia simples e fácil para começar do zero!
+				</h3>
+			</div>
+		</section>
+		<footer>
+			<div id="rodape" class="container">
+				<div class="Row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<h3 class="h3"> Propósito </h3>
+						<p class="ptext"> 
+							Plataforma de aprendizado de Python, do zero, cobrindo os conteúdos mais básicos para o desenvolvimento de aplicações simples. 
+						</p>
+					</div>
+					<div class="col-12 col-md-4 offset-md-2 col-lg-4 offset-lg-4">
+						<h3 class="h3"> Links </h3>
+						<ul class="rodape_ul">
+							<li class="rodape_li">
+								<a class="rodape_a" href="https://github.com/PzanettiD/Aprenda-Python">
+									<i class="fab fa-github"></i>
+									GitHub Repo
+								</a>
+							</li>
+							<li class="rodape_li">
+								<a class="rodape_a" href="https://github.com/PzanettiD">
+									<i class="fas fa-user-shield"></i>
+									Criador
+								</a>
+							</li>
+							<li class="rodape_li">
+								<a class="rodape_a" href="https://python.org.br">
+									<i class="fab fa-python"></i>
+									Site e Documentação Oficial
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
     </body>	
 </html>
