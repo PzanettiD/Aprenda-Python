@@ -1,9 +1,21 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #343a40 !important;
+    padding: 60px 0px 20px;
+}
 h3{
     font-weight: bold !important;
 }
 body{
     background-color: #fff;
-    
 }
 .ptext{
     text-align: justify;
@@ -15,20 +27,12 @@ body{
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+    padding-right: 1% !important;
+    padding-left: 1% !important;
 }
 
 .destaque-sub{
     padding-top: 3%    
-}
-
-.Row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer{
-    background-color: #3b89da;
-    padding: 60px 0px 20px;
 }
 
 #rodape{
@@ -61,7 +65,9 @@ footer{
 @media (max-width: 978px) {
     .container{
         padding: 0 !important; 
-        margin: 0 !important;
+    }
+    .col{
+        flex-basis: auto !important;
     }
 } 
 
